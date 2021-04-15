@@ -1,0 +1,16 @@
+# Created in Python 3
+for x in range(100):
+    #string that will be printed
+    printstr = ""
+
+    # appends "Fizz" to the string if x is divisible by 3
+    if x % 3 == 0:
+        printstr += "Fizz"
+    # appends "Buzz" to the string if x is divisible by 5
+    if x % 5 == 0:
+        printstr += "Buzz"
+    # prints x if x is not divisible by 3 or 5
+    if printstr == "":
+        printstr += str(x)
+
+    print(printstr)
